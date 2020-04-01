@@ -1,0 +1,133 @@
+<html>
+<head>
+<title>ZANKE (29)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>NESKONČNE ZANKE (29)
+<p><em><font color="red">Ena hiša ne trpi dveh gospodarjev. <small><sub>(Pregovor)</sub></em></small></p></font>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>NESKONČNE ZANKE</big>
+</center>
+
+<ul type="">
+	<li>Neskončna zanka je zanka, katere izvajanje se nikoli ne zaključi.
+	<li>To se zgodi takrat, ko ne uspemo doseči pogoja za izstop iz zanke.
+	<li>To pomeni, da vrednost izraza za odločanje, ki nadzoruje zanko, nikoli ne privzame vrednosti "Yes" ali “1” ali “da” ali “true”.
+	<li>Neskončnim zankam se lahko izognemo, če se zavedamo treh najpogostejših napak pri snovanju zank in jih ne zagrešimo.
+	<li>Spodnji primeri kažejo tri najpogostejše napake pri uporabi zank.
+	<li>V vseh treh primerih imamo opraviti z neskončno zanko.
+	<li>Poskusite najti napake v zankah sami. Če vam to ne uspe, si lahko ogledate razlage pod slikami.
+	<font color="red">
+	<li>Za ugotovitev vzrokov napak v spodnjih treh zankah postopajmo takole:
+	<ul type="a">
+		<li>Najprej zaženimo program na običajen način, torej ne po korakih, in opazujmo delovanje.
+		<li>V tem tekočem načinu izvajanja programa najprej preverimo, če gre res za neskončno zanko.
+		<li>Ko bomo preverili domnevo o neskončni zanki, bomo v koračnem načinu poskusili ugotoviti, kaj je vzrok za njen nastanek.
+		<li>Ko se bomo dokopali do vzroka, bomo lahko opravili v diagramu poteka popravke, ki so potrebni za pravilno delovanje.
+	</ul>
+	</font>
+</ul>
+
+		<TABLE ALIGN="center" BORDER=0 CELLSPACING=0 CELLPADDING=5 WIDTH="100%">
+		<TR ALIGN="middle" VALIGN="middle">
+			<TH WIDTH="33%"><A HREF="029nadzor01.rap"><img src="29nadzor01.jpg" border=0></a></TH>
+			<TH WIDTH="34%"><A HREF="029nadzor02.rap"><img src="29nadzor02.jpg" border=0></a></TH>
+			<TH WIDTH="33%"><A HREF="029nadzor03.rap"><img src="29nadzor03.jpg" border=0></a></TH>
+		</TR>
+		<TR ALIGN="left" VALIGN="middle">
+			<TD>Slika 1</TD>
+			<TD>Slika 2</TD>
+			<TD>Slika 3</TD>
+		</TR>
+		</TABLE>
+
+<br>
+<center>
+<big>RAZLAGA NAPAK V NESKONČNIH ZANKAH</big>
+</center>
+
+<ul type="">
+	<li>Slika 1:
+	<ul type="a">
+	<li>V zanki na sliki 1 manjka ukaz za povečevanje vrednosti števca.
+		<li>Števec je sicer pred zanko inicializian, saj mu je prirejena začetna vrednost, ki znaša 1.
+		<li>Ker v zanki manjka ukaz za povečanje števca, števec nikoli ne more doseči vrednosti, ki je postavljena v pogoju zanke.
+		<li>Ker števec nikoli ne more doseči vrednosti, ki je postavljena v pogoju zanke, se zanka ne more nikoli končati.
+	</ul>
+	<li>Slika 2:
+	<ul type="a">
+		<li>Zanka na sliki 2 sicer res vsebuje ukaz za povečevanje števca, vendar števec ne more doseči vrednosti, ki je zapisana v pogoju te zanke.
+		<li>Na začetku zanke se nahaja ukaz, s katerim priredimo števcu vrednost 1.
+		<li>Števec torej ob vsakem izvajanju zanke postavimo na začetno vrednost.
+		<li>Povečevanje vrednosti števca zato ne more učinkovati.
+		<li>Ker števec nikoli ne more doseči vrednosti, ki je postavljena v pogoju zanke, se zanka ne more nikoli končati.
+	</ul>
+	<li>Slika 3:
+	<ul type="a">
+		<li>V zanki na sliki 3 je ukaz za postavitev števca na začetno vrednost pravilno vključen.
+		<li>Zank vsebuje tudi ukaz, ki poskrbi za povečevanje števca.
+		<li>Napak, ki ju vsebujeta zanki na slikah 1 in 2, v zanki na sliki 3 nismo zagrešili.
+		<li>Kljub temu pa se zanka, ki jo vidimo na sliki 3, prav tako nikoli ne zaključi.
+		<li>Problem je v tem, da je vrednost, zapisana v pogoju zanke taka, da števec postavljenega pogoja ne more nikoli izpolniti.
+		<li>Začetna vrednost števca je namreč večja od končne vrednosti, z vsakim izvajanjem zanke pa je samo še vedno večja.
+		<li>Tekoča vrednost števca se torej z vsakim izvajanjem zanke od izpolnitve pogoja samo še oddaljuje.
+	</ul>
+</ul>
+
+<br>
+
+<b>1. Vprašanja za usmerjanje pozornosti, usvajanje novih besed, za razmislek in povezovanje snovi z lastno izkušnjo</b><br>
+1. Kaj je neskončna zanka ali zakaj jo tako imenujemo?<br>
+2. Kakšen je osnovni vzrok nastanka neskončne zanke?<br>
+3. Kaj je vzrok nastanka neskončne zanke na sliki 1?<br>
+4. Kaj se dogaja z vrednostjo števca zanke na sliki 1, ko se ta zanka izvaja?<br>
+5. Kaj je vzrok nastanka neskončne zanke na sliki 2?<br>
+6. Kaj se dogaja z vrednostjo števca zanke na sliki 2, ko se ta zanka izvaja?<br>
+7. Zakaj števec v zanki na sliki 2 nikoli ne doseže vrednosti, ki je postavljena v pogoju te zanke?<br>
+8. Kaj je vzrok nastanka neskončne zanke na sliki 3?<br>
+9. Kaj se dogaja z vrednostjo števca zanke na sliki 3, ko se ta zanka izvaja?<br>
+10. Zakaj števec v zanki na sliki 3 nikoli ne doseže vrednosti, ki je postavljena v pogoju te zanke?<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Domača naloga: </b><br>
+1. V zvezek prepiši misel, ki je zapisana na začetku učne enote z rdečimi črkami. Zabeleži nekaj lastnih misli, ki se ti utrnejo ob razmišljanju o njej.<br>
+2. Odgovori na vprašanja, na katere nisi uspel/a odgovoriti v šoli.
+
+
+
+<br><br>
+<font color="red"><b>4. PRAKTIČNA VAJA: </b> <br>
+<ul type="">
+	<li>S klikom na levi tipki zaženi algoritem na sliki 1 in v koračnem načinu spoznaj njegovo delovanje.
+	<li>Vsak blok v diagramu poteka opremi s smiselnim pojasnilom tega bloka.
+	<li>Datoteko shrani pod smiselnim imenom v mapi na ključu in na trdem disku.
+	<li>Kasneje ti bo morda ta datoteka prišla prav, ko boš reševal/a probleme s pomočjo "Raptorja".
+	<li>S klikom na levi tipki zaženi algoritem na sliki 2 in v koračnem načinu spoznaj njegovo delovanje.
+	<li>Vsak blok v diagramu poteka opremi s smiselnim pojasnilom tega bloka.
+	<li>Datoteko shrani pod smiselnim imenom v mapi na ključu in na trdem disku.
+	<li>Kasneje ti bo morda ta datoteka prišla prav, ko boš reševal/a probleme s pomočjo "Raptorja".
+	<li>S klikom na levi tipki zaženi algoritem na sliki 3 in v koračnem načinu spoznaj njegovo delovanje.
+	<li>Vsak blok v diagramu poteka opremi s smiselnim pojasnilom tega bloka.
+	<li>Datoteko shrani pod smiselnim imenom v mapi na ključu in na trdem disku.
+	<li>Kasneje ti bo morda ta datoteka prišla prav, ko boš reševal/a probleme s pomočjo "Raptorja".
+</ul>
+
+</font ><br>
+</td>
+</table>
+
+</body>
+</html>
+

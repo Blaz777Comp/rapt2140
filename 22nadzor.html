@@ -1,0 +1,125 @@
+<html>
+<head>
+<title>IZBIRA (22)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>IZBIRA (22)
+<p><em><font color="red">Moški nosi leta v kosteh, ženska pa na obrazu. <small><sub>(Pregovor)</sub></em></small></p></font>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>IZBIRA, SELEKCIJA, SPREJEMANJE ODLOČITEV</big>
+</center>
+
+<ul type="">
+	<li>Zelo pogosto moramo pri reševanju problemov sprejemati odločitve o tem, po kateri poti bomo probleme reševali.
+	<li>Izbiramo torej med različnimi poteki reševanja problema.
+	<li>Ukaz za nadzor poteka izvajanja programa s pomočjo odločitve omogoča sprejemanje odločitev v kodi programa in izbiro enega od dveh ali več možnih potekov izvajanja programa.<br>
+	<img src="005izbira.jpg" border=0></a><br>
+	Slika 1<br>
+	<li>Diagram poteka, ki ga vidimo na sliki 2, kaže ukaz za izbiro (odločanje) med dvema možnima potekoma programa.
+	<li>Simbol ukaza za izbiranje je romb, možni odločitvi pa sta “yes” (da) ali pa “no” (ne).
+	<li>To sta odgovora na vprašanje: “Ali je postavljeni pogoj v odločitvenem ukazu izpolnjen?”
+	<li>Če je odgovor “yes” (da ali resnično, pravilno), se izvede leva veja od dveh možnih.
+	<li>Če je odgovor “no” (da ali neresnično, nepravilno), se izvede desna veja od dveh možnih.
+	<li>Nikoli se ne moreta izvesti obe možnosti ob istem izvajanju programa.<br>
+
+			<TABLE ALIGN="center" BORDER=0 CELLSPACING=0 CELLPADDING=5 WIDTH="100%">
+			<TR ALIGN="middle" VALIGN="middle">
+				<TH WIDTH="50%"><img src="22nadzor01.jpg" border=0></a></TH>
+				<TH WIDTH="50%">
+
+				<TABLE ALIGN="left" BORDER=1 CELLSPACING=0 CELLPADDING=30 WIDTH="30%">
+				<TR ALIGN="middle" VALIGN="middle">
+					<TH>Prva možnost poteka programa</TH>
+					<TH>Druga možnost poteka programa</TH>
+				</TR>
+				<TR ALIGN="middle" VALIGN="middle">
+					<TD> Ukaz 1 </TD>
+					<TD> Ukaz 1 </TD>
+				</TR>
+				<TR ALIGN="middle" VALIGN="middle">
+					<TD> Ukaz 2a </TD>
+					<TD> Ukaz 2b </TD>
+				</TR>
+				<TR ALIGN="middle" VALIGN="middle">
+					<TD> Ukaz 3 </TD>
+					<TD> Ukaz 3 </TD>
+				</TR>
+				</TABLE>
+
+				</TH>
+			</TR>
+			<TR ALIGN="left" VALIGN="middle">
+				<TD>Slika 2</TD>
+				<TD>Tabela 1</TD>
+			</TR>
+			</TABLE>
+
+	<li>Vsaka od obeh možnih poti izvajanja programa v primeru na sliki 2 lahko vsebuje samo en ukaz ali pa več ukazov.
+	<li>Lahko se zgodi tudi to, da ena od možnih poti ne vsebuje nobenega ukaza.
+	<li>Nesmiselno bi bilo, če bi bili obe možnosti brez ukazov.
+	<li>Prav tako bi bilo nesmiselno, če bi obe možnosti vsebovali enaka ukaza ali pa povsem enaki zaporedji povsem enakih ukazov.
+</ul>
+
+<center>
+<big>PRIMER ODLOČANJA: DELJENJE DVEH ŠTEVIL</big>
+</center>
+
+<ul type="">
+	<li>Poglejmo si primer deljenja dveh števil na sliki 3.
+	<li>Če torej računamo rezultat “c” deljenja števila “a” s številom “b”, moramo uporabiti prireditveni stavek ali izraz  “c = a/b”.
+	<li>V tem primeru moramo preprečiti, da bi kot imenovalec ali delitelj nastopilo število 0.
+	<li>Deljenje s številom nič privede do napake v v delovanju programa (run-time error).
+	<li>Če se hočemo temu primeru izogniti, moramo najprej ugotoviti, ali je delitelj enak 0.
+	<li>Imamo dve možnosti:
+	<ul type="circle">
+		<li>1. če je delitelj enak nič, se račun ne izvede, program pa vrne le ustrezno sporočilo, da rezultat deljenja s številom 0 ni določen
+		<li>2. če delitelj ni enak nič, pa se deljenje izvede in program vrne rezultat deljenja.
+	</ul>
+	<A HREF="022nadzor01.rap"><img src="22nadzor02.jpg" border=0></a><br>
+	Slika 3
+</ul>
+
+<br>
+
+<b>1. Vprašanja za usmerjanje pozornosti, usvajanje novih besed, za razmislek in povezovanje snovi z lastno izkušnjo</b><br>
+1. Kakšne oblike (kateri geometrijski lik) je simbol za odločitve v diagramih poteka?<br>
+2. Koliko vhodov in koliko možnih izhodov ima simbol za odločitev v diagramih poteka?<br>
+3. Od česa je odvisno, katera izmed možnih vej diagrama poteka se bo po sprejemu odločitve (po izbiranju) izvedla?<br>
+4. Kaj je naloga programa, ki ga kaže diagram poteka na sliki 3?<br>
+5. Kako se glasi pogoj, ki odloča o nadaljnem poteku izvajanja programa?<br>
+6. V zvezek zapiši imena in vrednosti spremenljivk, ki smo jih vnesli v pirmeru na sliki 3.<br>
+7. Ali je pogoj v primeru na sliki 3 izpolnjen?<br>
+8. Katera veja diagrama poteka na sliki 3 se torej izvede: leva ali desna?<br>
+9. Koliko ukazov se torej po sprejemu odločitve v primeru na sliki 3 še izvede?<br>
+10. Zapiši v zvezek ime spremenljivke v pimeru na sliki 3, ki je imela vlogo količnika.<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Domača naloga: </b><br>
+1. V zvezek prepiši misel, ki je zapisana na začetku učne enote z rdečimi črkami. Zabeleži nekaj lastnih misli, ki se ti utrnejo ob razmišljanju o njej.<br>
+2. Odgovori na vprašanja, na katere nisi uspel/a odgovoriti v šoli.
+
+<br><br>
+<font color="red"><b>4. PRAKTIČNA VAJA: </b> <br>
+<ul type="">
+	<li>S klikom na levi tipki zaženi algoritem na sliki 3 in v koračnem načinu spoznaj njegovo delovanje.
+</ul>
+
+</font ><br>
+</td>
+</table>
+
+</body>
+</html>
+

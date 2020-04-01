@@ -1,0 +1,89 @@
+<html>
+<head>
+<title>ZANKE (28)</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1250">
+</head>
+
+<body  bgcolor="white" text="green" link="green" vlink="green" alink="green">
+
+<center>
+<big>ZANKE S ŠTEVCEM (28)
+<p><em><font color="red">V hiši, kjer vsi ukazujejo, se malo dela. <small><sub>(Pregovor)</sub></em></small></p></font>
+</big>
+</center>
+
+<table align="center" border=0 cellspacing=0 cellpadding=0 width="90%">
+<tr align="left" valign="middle">
+<td>
+
+<center>
+<big>ZANKE S ŠTEVCEM</big>
+</center>
+
+<ul type="">
+	<li>Zanke pogosto uporabimo, kadar se mora izvesti neko zaporedje ukazov v točno določenem številu ponovitev.
+	<li>To so zanke s števcem.
+	<li>Števec je spremenljivka, ki se ob vsakem izvajanju zanke poveča za 1.
+	<li>Zanke s števcem potrebujejo torej poleg ukaza za zanko še spremenljivko, ki odigra vlogo števca.
+	<li>Potrebne lastnosti števca so:
+	<ul type="a">
+		<li>inicializiran mora biti še preden se zanka začne izvajati,
+		<li>med izvajanjem zanke se mora spreminjati – najpogosteje se povečuje za ena,
+		<li>nastopati mora v izrazu, ki poskrbi za konec izvajanja zanke.
+	</ul>
+	<li>Povečanje vrednosti števca za določen korak imenujemo inkrement.
+	<li>Pomembne lastnosti števca so:
+	<ul type="a">
+		<li>Števec običajno označimo s črko “i”. Če vsebuje zanka več števcev, so preostale oznake običajno “j” in “k”. lahko uporabimo tudi opisno ime, denimo “stevec”. Opisno je ime je tako ime, iz katerega lahko sklepamo o naravi ali nalogi poimenovane stvari.
+		<li>Števec mora biti vedno postavljen na začetno vrednost ali inicializiran, še preden se začne zanka izvajati. Običajno je števec na začetku nastavljen na vrednost 1. Najbolje je, da začetno vrednost števca vedno nastavimo ta tako vrednost, ki najbolj ustreza problemu, ki ga rešujemo.
+		<li>Izraz za odločitev, ki nadzira izvajanje zanke, je oblikovan najpogosteje kot primerjava vrednosti s pomočjo primerjalnih operatorjev “večje ali enako” ali “manjše ali enako”. Uporaba teh dveh operatorjev je bolj varna kot uporaba operatorja “je enako”.
+		<li>Zanka, ki jo uporavljamo s pomočjo števca, povečuje vrednost števca za 1 ob vsakem izvajanju zanke. Vrednost števca lahko ob vsake izvajanju zanke povečamo tudi za kakšno drugo vrednost, denimo 2, 3 ali pa 14, vendar moramo pri tem predvideti vse mogoče posledice naše odločitve za drugačen inkrement.
+	</ul>
+	<li>Primer zanke s števcem, ki se izvede tolikokrat, kot to določi uporabnik, vidimo na  sliki 1.
+	<font color="red">
+	<li>Pozor: v diagramu poteka na sliki 1 se skrivata dve drobni napaki, ki sta vzrok za to, da program ne deluje povsem pravilno.
+	<li>Za ugotovitev vzrokov napak in njihovo odpravo postopajmo takole:
+	<ul type="a">
+		<li>Najprej zaženimo program na običajen način, torej ne po korakih, in opazujmo delovanje.
+		<li>V tem tekočem načinu izvajanja programa najprej poskusimo najti dve nepravilnosti.
+		<li>Ko bomo zaznali in razumeli obe nepravilnosti v delovanju programa, bomo v koračnem načinu poskusili ugotoviti, kaj je vzrok za ti dve nepravilnosti.
+		<li>Ko se bomo dokopali do vzroka, bomo lahko opravili v diagramu poteka dva popravka, ki sta potrebna za pravilno delovanje.
+	</ul>
+	</font>
+	<br>
+	<A HREF="028nadzor01.rap"><center><img src="28nadzor01.jpg" border=0></a><br></center>
+	Slika 1</ul>
+
+<b>1. Vprašanja za usmerjanje pozornosti, usvajanje novih besed, za razmislek in povezovanje snovi z lastno izkušnjo</b><br>
+1. Kaj je števec? Kako je označen v algoritmu v tej učni enoti?<br>
+2. V zvezek zapiši tri potrebne lastnosti števca zanke.<br>
+3. Za vsako od treh potrebnih lastnosti števca zanke preveri, če jo števec v algoritmu te učne enote izpolnjuje. Odgovore utemelji.<br>
+4. Kaj je inkrement? Koliko znaša inkrement v algoritmu te učne enote. Odgovor utemelji.<br>
+5. Koliko znaša začetna vrednost števca v algoritmu na sliki 1? Odgovor utemelji.<br>
+6. Čemu je enaka končna vrednost števca v algoritmu na sliki 1? Odgovor utemelji.<br>
+7. Koliko ukazov je v diagramu poteka na sliki 1 umeščeno pred zanko, koliko jih je za zanko in koliko jih vsebuje zanka?<br>
+8. Koliko je v diagramu poteka na sliki 1 ukazov za prirejanje, ukazov za vnos in ukazov za izpis?<br>
+9. Zapiši izraz, ki je pogoj za izstop iz zanke? Kateri primerjalni operator vsebuje?<br>
+10. Ali je vrstni red ukazov znotraj zanke pomemben in bistveno vpliva na delovanje zanke? Odgovor utemelji.<br>
+<br>
+<b>2. Zapiši od ene do pet ključnih besed, ki povzemajo vsebino te učne enote.</b><br><br>
+
+<b>3. Domača naloga: </b><br>
+1. V zvezek prepiši misel, ki je zapisana na začetku učne enote z rdečimi črkami. Zabeleži nekaj lastnih misli, ki se ti utrnejo ob razmišljanju o njej.<br>
+2. Odgovori na vprašanja, na katere nisi uspel/a odgovoriti v šoli.
+
+<br><br>
+<font color="red"><b>4. PRAKTIČNA VAJA: </b> <br>
+<ul type="">
+	<li>S klikom na levi tipki zaženi algoritem na sliki 1 in v koračnem načinu spoznaj njegovo delovanje.
+	<li>Vsak blok v diagramu poteka opremi s smiselnim pojasnilom tega bloka.
+	<li>Datoteko shrani pod smiselnim imenom v mapi na ključu in na trdem disku.
+	<li>Kasneje ti bo morda ta datoteka prišla prav, ko boš reševal/a probleme s pomočjo "Raptorja".
+</ul>
+
+</font ><br>
+</td>
+</table>
+
+</body>
+</html>

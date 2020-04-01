@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Help</title>
+</head>
+<body>
+<h1>Draw_Circle</h1>
+<p>Draw_Circle(X, Y, Radius, Color, Filled)</p>
+
+ 
+
+<p>Draw_Circle is a call that draws a circle whose center is (X,Y) and whose radius is given.</p>
+
+ 
+
+<p>Color specifies a color.
+
+<p>Filled can be either True (also Filled or Yes) or False (also Unfilled or No).  If True, the circle will be filled in with the given color. If False, the circle will be drawn with no internal fill.</p>
+
+ 
+
+<p>Note:  A graphics window must be open when Draw_Circle is called or a run-time error will occur.</p>
+
+ 
+
+<p>Examples:</p>
+
+ 
+
+<p>Draw_Circle(50,150,25,Green,True)</p>
+
+ 
+
+<p>draws a solid green circle with center (50,150) and radius 25.</p>
+
+ 
+
+<p>Draw_Circle(100,250,50,Green,False)</p>
+
+ 
+
+<p>draws an unfilled green circle with center (100,250) and radius 50.</p>
+
+<h1>Draw_Box</h1>
+<p>Draw_Box(X1, Y1, X2, Y2, Color, Filled)</p>
+
+ 
+
+<p>Draw_Box is a call that draws a rectangle on the screen.  It has 6 required parameters:</p>
+
+ 
+
+<p>(X1, Y1) is any corner of the rectangle</p>
+
+<p>(X2, Y2) is the opposite corner of the rectangle</p>
+
+<p>Color is a parameter that specifies a color</p>
+
+<p>Filled can be either True (also Filled or Yes) or False (also Unfilled or No). If True, the rectangle will be filled in with the given color. If False, the rectangle will be drawn with no internal fill.</p>
+
+ 
+
+<p>Note:  A graphics window must be open when Draw_Box is called or a run-time error will occur.</p>
+
+ 
+
+<p>Examples:</p>
+
+ 
+
+<p>Draw_Box(50,150,250,25,Green,True)</p>
+
+ 
+
+<p>Draws a solid green rectangle with upper left corner at (50,150) and lower right corner at (250,25).<br> Note that the programmer may also specify the lower left and upper right corners (not necessarily in that order) as shown in the example below, in which the rectangle is drawn in the same location as the rectangle above, but is not filled:</p>
+
+ 
+
+<p>Draw_Box(250,150,50,25,Green,False)</p>
+
+<h1>Load_Bitmap</h1>
+<p>bitmap <- Load_Bitmap(Filename)</p>
+
+ 
+
+<p>Load_Bitmap is a function that reads an image from a file into memory and returns a value which may be used to refer to the image.  In particular, this value may be used in a call to Draw_Bitmap to display the image in a RaptorGraph window.  Load_Bitmap takes 1 required parameter:</p>
+
+  
+
+<p>Filename is a string that specifies the file name of an image.</p>
+
+ 
+
+<p>Note:  The specified file must be in one the supported image file formats, otherwise a run-time error will occur.  The supported formats include Bitmap (.bmp), JPEG (.jpg), and GIF (.gif).</p>
+
+ 
+
+<p>Note:  A graphics window must be open when Load_Bitmap is called, otherwise the image will not be loaded.</p>
+
+  
+
+<p>Examples:</p>
+
+  
+
+<p>The following example loads the image with the filename mypicture.bmp into memory and assigns an associated value to the variable bitmap.  The variable bitmap could then be used in a subsequent call to Draw_Bitmap in order to draw all or part of the image in a RaptorGraph window.</p>
+
+ 
+ 
+
+
+ 
+
+<p>Since Load_Bitmap is a function, it also may be used directly in a call to Draw_Bitmap, as in the following example, which draws the image in the file "mypicture.bmp".  The image is drawn in the same location and with the same width and height constraints as in the example above. Don't load and draw the bitmap in a single command if this call is inside a loop. Load the image once outside the loop and then draw the bitmap inside the loop.</p>
+
+ 
+
+
+
+  
+
+<p>For more details on drawing images in a RaptorGraph window, see the Help page for Draw_Bitmap.
+
+ 
+<br>
+</br>
+
+<h1>Display_Text</h1>
+<p>Display_Text(X, Y, Text, Color)
+
+ 
+
+<p>Display_Text is a call that writes text to the RaptorGraph window.  It takes 4 required parameters:</p>
+
+ 
+
+<p>X and Y give the location of the upper left corner of the text</p>
+
+<p>Text gives the text to be displayed</p>
+
+<p>Color specifies a color for the text</p>
+
+ 
+
+<p>Note:  A graphics window must be open when Display_Text is called or a run-time error will occur.</p>
+
+ 
+
+<p>Examples:</p>
+
+ 
+
+<p>Display_Text(3, 10, "Hello!", Black)</p>
+
+ 
+
+<p>displays the word "Hello!" in black at coordinates (3,10)</p>
+
+ 
+
+<p>Display_Text(100, 100, StringVar, Red)</p>
+
+ 
+
+<p>displays the contents of the string variable StringVar in red at coordinates (100,100)</p>
+
+ 
+
+<p>Display_Text(30, 50, "Score: " + score, Red)</p>
+
+ 
+
+<p>displays the word Score followed by the value of the variable score in blue at coordinates (30,50)</p>
+
+<br>
+</br>
+<h1>Display_Number</h1>
+<p>Display_Number(X, Y, Number, Color)</p>
+
+ 
+
+<p>Display_Number is a call  that displays a number to the RaptorGraph window.  It takes 4 required parameters:</p>
+
+ 
+
+<p>X and Y give the location of the upper left corner of the number</p>
+
+<p>Number gives the number to be displayed</p>
+
+<p>Color specifies a color for the number</p>
+
+ 
+
+<p>Note:  A graphics window must be open when Display_Number is called or a run-time error will occur.</p>
+
+ 
+
+<p>Example:</p>
+
+ 
+
+<p>Display_Number(3,10,x, Black)</p>
+
+ 
+
+<p>displays the value of variable x in black at coordinates (3,10)</p>
+
+
+
+</body>
+</html>
